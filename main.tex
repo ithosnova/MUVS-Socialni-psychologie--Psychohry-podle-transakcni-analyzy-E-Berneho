@@ -1,0 +1,34 @@
+\documentclass[a4paper,12pt, oneside]{report}
+
+\input{_header.tex}
+\input{_variables.tex}
+\input{_cover.tex}
+
+
+
+\begin{document}
+\selectlanguage{czech}
+
+
+%------- OBSAH
+    \addcontentsline{toc}{chapter}{Obsah}
+    \setcounter{page}{2}
+\tableofcontents
+
+\newpage
+\input{1uvod.tex}
+\input{2advantages.tex}
+\input{3rizika.tex}
+\input{4vyzvy.tex}
+
+
+
+%------ LITERATURA
+    \newpage
+    \addcontentsline{toc}{chapter}{Literatura}
+    \bibliographystyle{unsrt}
+%    \bibliographystyle{acm}
+    \bibliography{reference}
+
+
+\end{document}
