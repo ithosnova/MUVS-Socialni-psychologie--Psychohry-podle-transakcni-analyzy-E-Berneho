@@ -2,7 +2,6 @@
 
 \input{_header.tex}
 \input{_variables.tex}
-\input{_cover.tex}
 
 
 
@@ -10,10 +9,14 @@
 \selectlanguage{czech}
 
 
+%------- TITULKA
+\input{_cover.tex}
+
 %------- OBSAH
-    \addcontentsline{toc}{chapter}{Obsah}
+\addcontentsline{toc}{chapter}{Obsah}
     \setcounter{page}{2}
 \tableofcontents
+%------- /OBSAH
 
 \newpage
 \input{1uvod.tex}
@@ -21,14 +24,12 @@
 \input{3rizika.tex}
 \input{4vyzvy.tex}
 
-
-
 %------ LITERATURA
-    \newpage
-    \addcontentsline{toc}{chapter}{Literatura}
-    \bibliographystyle{unsrt}
-%    \bibliographystyle{acm}
-    \bibliography{reference}
-
+\newpage
+\addcontentsline{toc}{chapter}{Literatura}
+\bibliographystyle{unsrt}
+% \bibliographystyle{acm}
+\bibliography{reference}
+%------ /LITERATURA
 
 \end{document}
